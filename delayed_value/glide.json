@@ -1,6 +1,6 @@
 {
   "name": "Simple glide script",
-  "description": "Returns a value passed after delay (Ver 0.1)",
+  "description": "Returns a value passed after delay (Ver 0.2)",
   "author": "Varun Dev <varun.dev@hotmail.com>",
   "params": [
     {
@@ -11,7 +11,7 @@
     {
       "name": "delay",
       "displayName": "Delay",
-      "type": "string"
+      "type": "integer"
     }
   ],
   "result": {
