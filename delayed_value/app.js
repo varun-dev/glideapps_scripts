@@ -3,18 +3,17 @@ window.addEventListener('message', async function (event) {
     origin,
     data: { key, params },
   } = event
-  console.log('Params', params)
-  const [repeat, interval] = params
+  console.log('Message', key, params)
+  const [delay] = params
   let ctr = 0
   let timer
-  if (!repeat || !interval) {
+  if (!delay) {
     respond(false)
   } else {
-    timer = setInterval(() => respond(ctr%2), interval.value)
+    setTimeout(() => respond(true), delay.value)
   }
 
   function respond(result) {
-    if(++ctr === repeat.value) clearInterval(timer)
     const response = { key }
     if (result !== undefined) {
       response.result = { type: 'boolean', value: result }

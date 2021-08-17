@@ -1,16 +1,11 @@
 {
   "name": "Simple glide script",
-  "description": "Returns alternating boolean values (Ver 0.5)",
+  "description": "Returns a true after delay (Ver 0.6)",
   "author": "Varun Dev <varun.dev@hotmail.com>",
   "params": [
     {
-      "name": "repeat",
-      "displayName": "Repeat",
-      "type": "number"
-    },
-    {
-      "name": "interval",
-      "displayName": "Interval (ms)",
+      "name": "delay",
+      "displayName": "Delay (ms)",
       "type": "number"
     }
   ],
