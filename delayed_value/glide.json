@@ -11,7 +11,7 @@
     {
       "name": "delay",
       "displayName": "Delay",
-      "type": "integer"
+      "type": "number"
     }
   ],
   "result": {
